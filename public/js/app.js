@@ -14,7 +14,7 @@ var imageApp = {
     console.log(imageApp.images);
     var listItemsFromImages = imageApp.images
                                       .map(function(imageurl){
-                                        return `<li><img src=${imageurl.image}/></li>`;
+                                        return `<li><img src=${imageurl.image}></li>`;
                                       })
                                       .join('');
     imageApp.list.innerHTML = listItemsFromImages;
